@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div>
+        <div class="fixed-column nav-social">
+            <div>
+                <a href="index.html"><img src="image/Logo perso Titre.svg" alt="logo" class="logo"></a>
+                <br>
+                <br>
+                <div class="sommaire">
+                    <li><a href="index.html" class="hover" onmouseover="changeColor(this)"
+                            onmouseout="resetColor(this)">Projets</a></li>
+                    <li><a href="à_propos.html" class="hover" onmouseover="changeColor(this)"
+                            onmouseout="resetColor(this)">À propos</a></li>
+                    <li><a href="contact.html" class="hover" onmouseover="changeColor(this)"
+                            onmouseout="resetColor(this)">Contact</a></li>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/matthias-proençagoncalves-da-costa-64bb16260/"><img
+                        src="image/linkedin-in.svg" alt="logo linkdin" class="logo-social"></a>
+                <a href="tel:0782321321"><img src="image/phone-solid.svg" alt="picto téléphone" class="logo-social"></a>
+                <a href="contact.html"><img src="image/envelope-solid.svg" alt="picto mail" class="logo-social"></a>
+            </div>
+        </div>
+        <section class="content-column">
+
+            <section id="contactform">
+                <div class="contact">
+                </div>
+        
+                <div class="container">
+                    <div class="form-wrapper">
+                        <h2 class="form-heading">Formulaire de contact</h2>
+                        <form class="contact-form">
+                            <input type="text" autocomplete="off" placeholder="Nom et Prénom" class="contact-form-input" />
+                            <input type="email" autocomplete="off" placeholder="Email" class="contact-form-input" />
+                            <input type="text" autocomplete="off" placeholder="Objet" class="contact-form-input" />
+                            <textarea class="contact-form-input contact-form-textarea" placeholder="Votre message"></textarea>
+                            <input type="submit" class="form-submit-btn" value="ENVOYER" />
+                        </form>
+                    </div>
+                </div>
+        
+            </section>
+            
+        </section>
+        <script src="main.js"></script>
+</body>
+
+</html>

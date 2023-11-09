@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.local {
+    color: rgb(98, 32, 98);
+}
+
+.souligneBlanc {
+    border-bottom: 1px solid white;
+}
+
+.souligneNoir {
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    max-width: 80%;
+    padding-top:15%;
+
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-social {
+    width: 10%;
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fixed-column {
+    padding: 20px;
+    padding-left: 60px;
+    width: 200px;
+    position: fixed;
+    color: white;
+    height: 100vh;
+    background-color: rgb(32, 31, 35);
+}
+
+.content-column {
+    margin-left: 280px;
+    padding: 20px;
+    color: rgb(32, 31, 35);
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projet {
+    max-width: 100%;
+}
+
+
+li {
+    list-style-type: none;
+    margin-top: 10%;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hover {
+    text-decoration: none;
+    color: grey;
+    position: relative;
+    display: inline-block;
+}
+
+.hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    bottom: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.hover:hover::before {
+    width: 100%;
+}
+
+.portrait {
+    width: 50%;
+    padding-left: 25%;
+}
+
+.group-projet {
+    position: relative;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: -4px;
+}
+
+.hover-detail {
+    opacity: 0;
+    font-size: 90%;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    padding-top: 60%;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255);
+    background-color: rgb(32, 31, 35, 0.900);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.group-projet .hover-detail:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.form-heading {
+    font-size: large;
+    font-weight: 800;
+    color: rgb(32, 31, 35);
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgb(167, 149, 172);
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(60, 60, 60);
+    letter-spacing: 1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact-form-input:focus {
+    color: rgb(32, 31, 35);
+    border: 1px solid rgb(32, 31, 35);
+    border-radius: 30px;
+}
+
+.contact-form-input::placeholder {
+    color: rgb(179, 175, 188)   ;
+}
+
+.contact-form-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-submit-btn {
+    width: 400px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    color: rgb(146, 146, 146);
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s
+}
+
+.form-submit-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 30px;
+    transform: scale(1.05);
+    transition: 1s
+}   
+
+@media screen and (max-width: 900px) {
+    .contact-form-input {
+        width: 80%;
+        height: 50%;
+        padding: 5px;
+        margin: 7px 15px;
+        color: rgb(85, 85, 85);
+    }
+
+    .form-submit-btn {
+        width: 80%;
+        height: 50%;
+        padding: 5px;
+        margin: 7px 15px;
+        color: rgb(85, 85, 85);
+        z-index: 0;
+    }
+
+    .contact-form-input::placeholder {
+        color: rgb(85, 85, 85);
+    }
+}
